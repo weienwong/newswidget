@@ -15,14 +15,5 @@ $.ajax({
     }
 });
 
-$.ajax({
-url: "http://uwimprint.ca/feeds/all",
-cache: false
-})
-.done(function( html ) {
-$( "#thirdTab" ).append( html );
-});
-
-
 
 }
