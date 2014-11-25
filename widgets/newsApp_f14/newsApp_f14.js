@@ -7,7 +7,8 @@ function showTabs(){
 		firstTab: "UW News",
 		secondTab: "UW Subreddit",
 		thirdTab: "UW Imprint",
-		fourthTab: "Chevron"
+		fourthTab: "Chevron",
+		fifthTab: "Daily Bulletin"
 	};
 
 	var openingUL = "<ul class=\"nav nav-tabs\" role=\"tablist\" position=\"fixed\">";
