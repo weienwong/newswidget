@@ -6,7 +6,8 @@ function showTabs(){
 	var newsHeadings = {
 		firstTab: "UW News",
 		secondTab: "UW Subreddit",
-		thirdTab: "UW Imprint"
+		thirdTab: "UW Imprint",
+		fourthTab: "Chevron"
 	};
 
 	var openingUL = "<ul class=\"nav nav-tabs\" role=\"tablist\" position=\"fixed\">";
