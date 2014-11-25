@@ -1,3 +1,5 @@
+function testit(){
+
 $.ajax({ 
     type: 'GET',
     url : 'http://uwchevron.wordpress.com/feed/',
@@ -12,3 +14,4 @@ $.ajax({
       });
 }
 });
+}
