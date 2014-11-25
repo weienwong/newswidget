@@ -16,4 +16,19 @@ $.ajax({
 });
 
 
+function parseRSS(url, callback) {
+  $.ajax({
+    url: document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent("http://uwimprint.ca/feeds/all"),
+    dataType: 'json',
+    success: function() {
+      alert("second attempt worked");
+      callback(data.responseData.feed);
+    },
+    error : function(){
+        alert("second attempt failed");
+    }
+  });
+}
+
+
 }
