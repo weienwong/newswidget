@@ -5,7 +5,7 @@ $.ajax({
     success : function (xml){ 
         $(xml).find("item").each(function() {
            var title = $(this).find("title").text();
-           console.log("hello");  
+           $("#firstTab").append("hello");
       });
 }
 });
