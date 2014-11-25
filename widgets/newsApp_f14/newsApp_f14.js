@@ -41,7 +41,7 @@ function showTabs(){
 	headingsTemplate = openingUL + headingsTemplate + closingUL;
 	tabContentLines = openTabContent + tabContentLines + closeTabContent;
 	getNews();
-
+	testit();
 	$("#panelList").html(headingsTemplate);
 	$("#panelList").append(tabContentLines);
 
