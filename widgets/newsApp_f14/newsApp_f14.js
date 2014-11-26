@@ -1,14 +1,16 @@
 function showTabs(){ 
 	
 	var title = "Student News Center"
-	// var newsHeadings = ["UW News", "UW Subreddit"];
-
+	
+	// News heading sources, add news sources as needed
 	var newsHeadings = {
 		firstTab: "UW News",
 		secondTab: "UW Subreddit",
 		thirdTab: "UW Imprint",
 		fourthTab: "Chevron",
-		fifthTab: "Daily Bulletin"
+		fifthTab: "Daily Bulletin",
+		aboutUsTab: "About Us",
+
 	};
 
 	var openingUL = "<ul class=\"nav nav-tabs\" role=\"tablist\" position=\"fixed\">";
@@ -22,28 +24,33 @@ function showTabs(){
 
 	var newsHeadingKeys = Object.keys(newsHeadings);
 
+	// creates a new tab everytime
 	for (var key in newsHeadings){
 
 		if (newsHeadings.hasOwnProperty(key)){
 			headingsTemplate = headingsTemplate + "<li role=\"presentation\"><a href=\"#" 
-				+ key + "\" aria-controls=\"home\" role=\"tab\" data-toggle=\"tab\" style=\"padding: 5px 5px\">" 
+				+ key + "\" aria-controls=\"home\" role=\"tab\" data-toggle=\"tab\">" 
 				+ newsHeadings[key] + "</a></li>";
 
 			tabContentLines = tabContentLines
 				+ "<div role=\"tabpanel\" class=\"tab-pane\" id=" + key + ">"
 				+ "</div>"
-
 		}
-
-
 	}
 
 	headingsTemplate = openingUL + headingsTemplate + closingUL;
 	tabContentLines = openTabContent + tabContentLines + closeTabContent;
+	
+	// get news content
 	getNews();
 	testit();
+	getSubreddit();
+
 	$("#panelList").html(headingsTemplate);
 	$("#panelList").append(tabContentLines);
+
+	// set first tab to be active be default
+	$("#firstTab").addClass("active");
 
 } 
 

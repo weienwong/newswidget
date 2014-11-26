@@ -26,11 +26,14 @@
             <div class="pull-right"><a href="/admin">Admin</a></div>
         </div>
 	 
-	   <div class="row">
+	   <div id="main_widget_area" class="row">
+
 	    	<div class="col-md-4 cell" id="newsApp_f14_background">
+                <div class="newsAppTitleBar">
+                    University of Waterloo News
+                </div>
                 <div id="newsApp_f14">
                     <div id="panelList" role="tabpanel">
-
                     </div>
                 </div>
 		    </div>
@@ -45,12 +48,14 @@
     
     <script type="text/javascript" src="widgets/newsApp_f14/getUwNews.js"></script>
     <script type="text/javascript" src="widgets/newsApp_f14/test.js"></script>
+    <script type="text/javascript" src="widgets/newsApp_f14/getUwSubreddit.js"></script>
 
     <script>
     var server = "localhost"
     $(document).ready(function() {
 
-        showTabs(); 
+        showTabs();
+
     	
     });
     </script>
