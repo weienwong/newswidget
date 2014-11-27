@@ -28,17 +28,7 @@
    overflow:auto;
 }
 
-.btn{
-	white-space: normal;
-	text-overflow: ellipsis;
-	
-}
-
-.blackBg{
-	background: black;
-}
-
-.newsAppTitleBar{
+.newsApp_f14_newsAppTitleBar{
 	position: relative;
 	height: 30px;
 	outline: 1px solid gray;
@@ -52,4 +42,10 @@
 
 .nav-tabs{
 	padding-top: 2px;
+}
+
+div .publishInfo{
+	text-align: right;
+	font-size: 11px;
+	font-style: italic;
 }
