@@ -8,7 +8,7 @@ function handleTweets(tweets){
     var element = document.getElementById('chevron');
     var html = '';
     console.log(tweets);
-    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>"+html+"</b></a><br><br></div></div>"
+    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>{{html}}</b></a><br><br></div></div>"
     
     while(n < x) {
       html = tweets[n];
