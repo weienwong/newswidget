@@ -7,6 +7,9 @@ function handleTweets(tweets){
     var n = 0;
     var element = document.getElementById('chevron');
     var html = '<ul>';
+    
+    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"{{url}}\"><b>{{title}}</b></a><br><br><div class=\"publishInfo\">Posted by: {{author}}</div></div></div>"
+    
     while(n < x) {
       html += '<li>' + tweets[n] + '</li>';
       var newsPanel = Mustache.to_html(panelTemplate, tweets[n]);
