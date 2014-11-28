@@ -3,10 +3,10 @@
 
 
 function getChevron(){
-	var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
+	var TwitterAPIKey = "GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&oauth_consumer_key%3Dnugk4CM3hmyMnQWNjnTYSg0H5%26oauth_nonce%3D3806e62fc6c942c94883010941ad1f6f%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1417206146%26oauth_version%3D1.0%26screen_name%3DTheUWChevron";
 	OAuth.initialize(TwitterAPIKey);
     
-    	OAuth.popup('http://api.twitter.com')
+    	OAuth.popup('twitter')
 	.done(function(result) {
   		//use result.access_token in your API request 
 		//or use result.get|post|put|del|patch|me methods (see below)
