@@ -11,7 +11,7 @@ function getChevron(){
 	.done(function(result) {
   		//use result.access_token in your API request 
 		//or use result.get|post|put|del|patch|me methods (see below)
-		result.get('/1.1/statuses/user_timeline.json?screen_name=TheUWChevron')
+		result.get('/statuses/user_timeline.json?screen_name=TheUWChevron')
     		.done(function (response) {
         		console.log(response.name);
     		})
