@@ -9,7 +9,7 @@ function formatImprintJson(jsonObj){
 
 	for (var i = 0; i < newsArticles.length; i++){
 		var newsPanel = Mustache.to_html(panelTemplate, newsArticles[i]);
-		$("#newsApp_f14_fourthTab").append(newsPanel);
+		$("#newsApp_f14_thirdTab").append(newsPanel);
 	}
 }
 
