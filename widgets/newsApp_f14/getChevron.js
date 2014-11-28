@@ -16,9 +16,11 @@ function getChevron(){
     		})
     		.fail(function (err) {
         		console.log("Failure fetching Twitter UW Chevron data: result.get");
+        		console.log(err);
     		});
 	})
 	.fail(function (err) {
   		console.log("Failure fetching Twitter UW Chevron data: OAuth.popup");
+  		console.log(err);
 	});
 }
