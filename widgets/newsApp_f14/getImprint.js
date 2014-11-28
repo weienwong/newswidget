@@ -20,7 +20,7 @@ $.ajax({
    var FBkey = 'f699059732366ffacbe5968da892c991';
     
     type: 'GET',
-    url : 'https://graph.facebook.com/v2.2/UWImprint/feed?access_tocken='+ FBkey,
+    url : 'https://graph.facebook.com/v2.2/UWImprint/feed?access_token='+ FBkey,
     dataType: 'json',
     error : function (){
         alert("grabbing FB data did not work");
