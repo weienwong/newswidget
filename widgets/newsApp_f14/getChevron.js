@@ -13,7 +13,7 @@ function handleTweets(tweets){
     while(n < x) {
       html += '<li>' + tweets[n] + '</li>';
       var newsPanel = Mustache.to_html(panelTemplate, tweets[n]);
-		$("#newsApp_f14_forthTab").append(newsPanel);
+		$("#newsApp_f14_fourthTab").append(newsPanel);
       n++;
     }
     //html += '</ul>';
