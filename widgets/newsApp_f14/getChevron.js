@@ -1,5 +1,7 @@
 // This is to grab data from the UW Chevron's Twitter
 // not working until can figure out how to use twitter
+function getChevron(){
+
 function handleTweets(tweets){
     var x = tweets.length;
     var n = 0;
@@ -15,7 +17,7 @@ function handleTweets(tweets){
     element.innerHTML = html;
 }
 
-function getChevron(){
+
 	
 	//attemtping to use Twitter Fetcher
 	
