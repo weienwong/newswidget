@@ -4,17 +4,21 @@
 
 function getChevron(){
 	var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
+	OAuth.initialize(TwitterAPIKey);
     
-    $.ajax({
-     type: "GET",
-     dataType: "json",
-     url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=TheUWChevron?key="+TwitterAPIKey,
-     error: function(){
-		   alert("Failed to retreieve Twitter data");
-		},
-     success: function(){
-     	alert("Able to retreieve Twitter data");
-        //$("#tweet_result").text(data.results[0].text);
-     }
-   });
+    	OAuth.popup('twitter')
+	.done(function(result) {
+  		//use result.access_token in your API request 
+		//or use result.get|post|put|del|patch|me methods (see below)
+		result.get('/1.1/statuses/user_timeline.json?screen_name=TheUWChevron')
+    		.done(function (response) {
+        		console.log(response.name);
+    		})
+    		.fail(function (err) {
+        		//handle error with err
+    		});
+	})
+	.fail(function (err) {
+  		//handle error with err
+	});
 }
