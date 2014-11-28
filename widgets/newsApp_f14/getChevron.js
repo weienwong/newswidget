@@ -32,10 +32,10 @@ function handleTweets(tweets){
   		"showUser": true,
   		"showTime": true,
   		"lang": 'en',
-  		"customCallback": handleTweets
+  		//"customCallback": handleTweets
 	};
-	twitterFetcher.fetch(chevronfeed);
-	
+	//twitterFetcher.fetch(chevronfeed);
+	 console.log(twitterFetcher.fetch(chevronfeed));
 	
 	/*var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
 	OAuth.initialize(TwitterAPIKey);
