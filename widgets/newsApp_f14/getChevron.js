@@ -6,7 +6,7 @@ function getChevron(){
 	var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
 	OAuth.initialize(TwitterAPIKey);
     
-    	OAuth.popup('twitter')
+    	OAuth.callback('twitter')
 	.done(function(result) {
   		//use result.access_token in your API request 
 		//or use result.get|post|put|del|patch|me methods (see below)
@@ -20,7 +20,7 @@ function getChevron(){
     		});
 	})
 	.fail(function (err) {
-  		console.log("Failure fetching Twitter UW Chevron data: OAuth.popup");
+  		console.log("Failure fetching Twitter UW Chevron data: OAuth.redirect");
   		console.log(err);
 	});
 }
