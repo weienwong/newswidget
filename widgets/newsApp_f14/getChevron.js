@@ -6,7 +6,7 @@ function getChevron(){
 	var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
 	OAuth.initialize(TwitterAPIKey);
 	
-    	OAuth.redirect('twitter', "callback/url");
+    	OAuth.redirect('twitter', "");
     
     	OAuth.callback('twitter')
 	.done(function(result) {
