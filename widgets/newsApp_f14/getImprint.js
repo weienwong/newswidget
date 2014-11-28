@@ -14,7 +14,7 @@ function formatImprintJson(jsonObj){
 }
 
 
-function imprint(){
+function getImprint(){
 
 $.ajax({ 
    var FBkey = 'f699059732366ffacbe5968da892c991';
