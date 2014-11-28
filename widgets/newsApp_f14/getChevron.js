@@ -3,7 +3,7 @@
 
 
 function getChevron(){
-	var TwitterAPIKey = "GET&https%3A%2F%2Fapi.twitter.com%2F1.1%2Fstatuses%2Fuser_timeline.json&oauth_consumer_key%3Dnugk4CM3hmyMnQWNjnTYSg0H5%26oauth_nonce%3D3806e62fc6c942c94883010941ad1f6f%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1417206146%26oauth_version%3D1.0%26screen_name%3DTheUWChevron";
+	var TwitterAPIKey = "DC0sePOBbQ8bYdC8r4Smg";
 	OAuth.initialize(TwitterAPIKey);
     
     	OAuth.popup('twitter')
