@@ -8,7 +8,7 @@ function handleTweets(tweets){
     var element = document.getElementById('chevron');
     var html = '<ul>';
     console.log(tweets);
-    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></a><br><br></div></div>"
+    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>"+tweets[n]+"</b></a><br><br></div></div>"
     
     while(n < x) {
       html += '<li>' + tweets[n] + '</li>';
@@ -29,7 +29,7 @@ function handleTweets(tweets){
   		"domId": 'chevron',
   		"maxTweets": 100,
   		"enableLinks": true,
-  		"showUser": true,
+  		"showUser": false,
   		"showTime": true,
   		"lang": 'en',
   		"customCallback": handleTweets
