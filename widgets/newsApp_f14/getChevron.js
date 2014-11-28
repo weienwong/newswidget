@@ -8,7 +8,7 @@ function getChevron(){
 	 $.ajax({
      type: "GET",
      dataType: "json",
-     url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=TheUWChevron",
+     url: "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=TheUWChevron?key="+TwitterAPIKey,
      error: function(){
 			alert("Failed to retreieve data");
 		},
