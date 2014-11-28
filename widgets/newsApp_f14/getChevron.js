@@ -32,7 +32,7 @@ function handleTweets(tweets){
   		"showUser": false,
   		"showTime": true,
   		"lang": 'en',
-  		"showInteractionLinks": false,
+  		"showInteraction": false,
   		"customCallback": handleTweets,
   		"showRetweet": false
 	};
