@@ -8,12 +8,12 @@ function handleTweets(tweets){
     var element = document.getElementById('chevron');
     var html = '<ul>';
     
-    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"{{url}}\"><b>{{title}}</b></a><br><br><div class=\"publishInfo\">Posted by: {{author}}</div></div></div>"
+    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b></b></a><br><br></div></div>"
     
     while(n < x) {
       html += '<li>' + tweets[n] + '</li>';
       var newsPanel = Mustache.to_html(panelTemplate, tweets[n]);
-		$("#newsApp_f14_thirdTab").append(newsPanel);
+		$("#newsApp_f14_forthTab").append(newsPanel);
       n++;
     }
     html += '</ul>';
