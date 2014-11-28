@@ -17,7 +17,7 @@ function formatImprintJson(jsonObj){
 function getImprint(){
 
 $.ajax({ 
-   var FBkey = 'f699059732366ffacbe5968da892c991';
+   //var FBkey = 'f699059732366ffacbe5968da892c991';
     
     type: 'GET',
     url : 'https://graph.facebook.com/v2.2/UWImprint/feed?access_token='+ FBkey,
