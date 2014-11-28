@@ -2,7 +2,7 @@ function testit(){
 
 $.ajax({ 
     type: 'GET',
-    url : 'https://localhost:8080/uwchevron.wordpress.com/feed/',
+    url : 'https://localhost:8080/?url=uwchevron.wordpress.com/feed/',
     dataType: 'xml',
     error : function (xml){
         alert("grabbing data did not work");
