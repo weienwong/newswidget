@@ -3,7 +3,7 @@
 
 
 function getChevron(){
-	var TwitterAPIKey = "DC0sePOBbQ8bYdC8r4Smg";
+	var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
 	OAuth.initialize(TwitterAPIKey);
     
     	OAuth.popup('twitter')
