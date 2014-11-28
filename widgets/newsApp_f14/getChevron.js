@@ -27,7 +27,7 @@ function handleTweets(tweets){
 	var chevronfeed = {
   		"id": '538441455971631104',
   		"domId": 'chevron',
-  		"maxTweets": 5,
+  		"maxTweets": 100,
   		"enableLinks": true,
   		"showUser": true,
   		"showTime": true,
