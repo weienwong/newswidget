@@ -6,12 +6,12 @@ function handleTweets(tweets){
     var x = tweets.length;
     var n = 0;
     var element = document.getElementById('chevron');
-    var html = '<ul>';
+    var html = '';
     console.log(tweets);
-    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>"+tweets[n]+"</b></a><br><br></div></div>"
+    var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>"+html+"</b></a><br><br></div></div>"
     
     while(n < x) {
-      html += '<li>' + tweets[n] + '</li>';
+      html = tweets[n];
       var newsPanel = Mustache.to_html(panelTemplate, tweets[n]);
 		$("#newsApp_f14_fourthTab").append(newsPanel);
       n++;
