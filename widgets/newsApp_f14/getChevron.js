@@ -16,8 +16,8 @@ function handleTweets(tweets){
 		$("#newsApp_f14_forthTab").append(newsPanel);
       n++;
     }
-    html += '</ul>';
-    element.innerHTML = html;
+    //html += '</ul>';
+    //element.innerHTML = html;
 }
 
 
