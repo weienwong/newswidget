@@ -21,7 +21,7 @@ function handleTweets(tweets){
 	
 	//attemtping to use Twitter Fetcher
 	
-	var chevronfeed {
+	var chevronfeed = {
   		"id": '347099293930377217',
   		"domId": 'chevron',
   		"maxTweets": 5,
