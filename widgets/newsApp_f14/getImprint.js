@@ -26,7 +26,7 @@ $.ajax({
         alert("grabbing FB data did not work");
     },
     success : function (data){ 
-        formatImprintJson(data);
+        alert("grabbing FB data worked");
     }
 });
 }
