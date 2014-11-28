@@ -7,7 +7,7 @@ function handleTweets(tweets){
     var n = 0;
     var element = document.getElementById('chevron');
     var html = '<ul>';
-    
+    console.log(tweets);
     var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>"+html+"</b></a><br><br></div></div>"
     
     while(n < x) {
@@ -25,7 +25,7 @@ function handleTweets(tweets){
 	//attemtping to use Twitter Fetcher
 	
 	var chevronfeed = {
-  		"id": '347099293930377217',
+  		"id": '538441455971631104',
   		"domId": 'chevron',
   		"maxTweets": 5,
   		"enableLinks": true,
