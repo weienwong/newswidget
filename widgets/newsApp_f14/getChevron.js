@@ -6,7 +6,7 @@ function getChevron(){
 	var TwitterAPIKey = "nugk4CM3hmyMnQWNjnTYSg0H5";
 	OAuth.initialize(TwitterAPIKey);
     
-    	OAuth.popup('twitter')
+    	OAuth.popup('http://api.twitter.com')
 	.done(function(result) {
   		//use result.access_token in your API request 
 		//or use result.get|post|put|del|patch|me methods (see below)
