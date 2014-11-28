@@ -45,9 +45,9 @@ function showTabs(){
 	// makes function calls to grab and display news content from sources
 	getNews();
 	//getImprint();
-	//getChevron();
+	getChevron();
 	getSubreddit();
-	testit();
+	//testit();
 
 	// populates the news tabs
 	$("#newsApp_f14_panelList").html(headingsTemplate);
