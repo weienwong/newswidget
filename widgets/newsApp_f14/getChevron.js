@@ -32,7 +32,9 @@ function handleTweets(tweets){
   		"showUser": false,
   		"showTime": true,
   		"lang": 'en',
-  		"customCallback": handleTweets
+  		"showInteractionLinks" = false,
+  		"customCallback": handleTweets,
+  		"showRetweet": false
 	};
 	twitterFetcher.fetch(chevronfeed);
 
