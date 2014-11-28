@@ -15,10 +15,10 @@ function getChevron(){
         		console.log(response.name);
     		})
     		.fail(function (err) {
-        		//handle error with err
+        		console.log("Failure fetching Twitter UW Chevron data: result.get");
     		});
 	})
 	.fail(function (err) {
-  		//handle error with err
+  		console.log("Failure fetching Twitter UW Chevron data: OAuth.popup");
 	});
 }
