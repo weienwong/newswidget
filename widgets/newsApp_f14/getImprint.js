@@ -4,6 +4,7 @@
 function getImprint() {
 // gets a list of html strings for each tweet
 function handleTweets(tweets){
+	console.log(tweets);
     var tweetNum = tweets.length;
     var element = document.getElementById('imprint');
    
