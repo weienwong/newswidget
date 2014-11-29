@@ -13,8 +13,8 @@ function showTabs(){
 		newsApp_f14_secondTab: "<img src=\"https://reddit.com/favicon.ico\" alt=\"Reddit icon\" title=\"r/uwaterloo subreddit postings\" height=\"30\" width=\"30\">",
 		newsApp_f14_thirdTab: "<img src=\"https://pbs.twimg.com/profile_images/3729504476/cf2cf5267cd8c1f5caeccbdf0b821941_400x400.png\" title=\"UW Imprint's tweets\" alt=\"UW Imprint Twitter icon\" height=\"30\" width=\"30\">",
 		newsApp_f14_fourthTab: "<img src=\"http://uwchevron.wordpress.com/favicon.ico\" alt=\"The UW Chevron Twitter icon\" title=\"UW Chevron's tweets\" height=\"30\" width=\"30\">",
-		newsApp_f14_fifthTab: "<img src=\"http://www.bulletin.uwaterloo.ca/favicon.ico\" alt=\"UW Daily Bulletin icon\" title=\"UW Daily Bulletin's tweets\" height=\"30\" width=\"30\">",
-		newsApp_f14_sixthTab: "<img src=\"http://imgur.com/zeaHHct\" alt=\"University of Waterloo Twitter icon\" title=\"University Waterloo's tweets\" height=\"30\" width=\"30\">"
+		newsApp_f14_fifthTab: "<img src=\"http://imgur.com/zeaHHct\" alt=\"UW Daily Bulletin icon\" title=\"UW Daily Bulletin's tweets\" height=\"30\" width=\"30\">",
+		newsApp_f14_sixthTab: "<img src=\"https://pbs.twimg.com/profile_images/378800000863451026/FxTf9bMi_400x400.jpeg\" alt=\"University of Waterloo Twitter icon\" title=\"University Waterloo's tweets\" height=\"30\" width=\"30\">"
 		//newsApp_f14_aboutUsTab: "About Us",
 
 	};
