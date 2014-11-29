@@ -10,11 +10,20 @@ function handleTweets(tweets){
     
    
     for (var i = 0; i < tweetNum; i++){
-      console.log(tweets[i]);
-     var newsList = breakUpNews(tweets[i]);
-     console.log("the length is " + newsList.length);
+      //console.log(tweets[i]);
+    // var newsList = breakUpNews(tweets[i]);
+     //console.log("the length is " + newsList.length);
       //console.log(newsList[0]);
-      var newNews = newsItem(newsList[0], newsList[1], "Chevron", "http://uwchevron.wordpress.com/");
+      
+      var subString = tweets[i].split('</p><p class="timePosted">');
+  	// this returns a list of strings similar to:
+  	// ["<p class="tweet">Look for new articles soon!", "Posted on 14 Nov</p>"]
+  
+  	subString[0] = subString[0].substr(17); // to remove the "P class tweet" tag
+	 subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
+      
+      
+      var newNews = newsItem(subString[0], subString[1], "Chevron", "http://uwchevron.wordpress.com/");
      var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href="+newNews.url+"><b>"+newNews.article+"</b></a><br><br><div class=\"publishInfo\">Posted by: "+newNews.author+"</div></div></div>"
       var newsPanel = Mustache.to_html(panelTemplate);
 		$("#newsApp_f14_fourthTab").append(newsPanel);
