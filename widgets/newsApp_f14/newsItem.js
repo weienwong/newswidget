@@ -26,7 +26,7 @@ function breakUpNews(string){
   subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
   
   
-  console.log(subString);
+  //console.log(subString);
 
 
 }
