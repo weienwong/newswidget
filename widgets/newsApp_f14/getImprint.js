@@ -42,5 +42,5 @@ function handleTweets(tweets){
 	};
 	twitterFetcher.fetch(imprintfeed);
 
-}
+
 }
