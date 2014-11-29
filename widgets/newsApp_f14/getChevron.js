@@ -11,7 +11,8 @@ function handleTweets(tweets){
    
     for (var i = 0; i < tweetNum; i++){
       console.log(tweets[i]);
-     var newsList = breakUpNews("'"+tweets[i]+"'");
+     var newsList = breakUpNews(tweets[i]);
+     console.log(newsList.length);
       console.log(newsList[0]);
       var newNews = newsItem(newsList[0], newsList[1], "Chevron", "http://uwchevron.wordpress.com/");
      var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href="+newNews.url+"><b>"+newNews.article+"</b></a><br><br><div class=\"publishInfo\">Posted by: "+newNews.author+"</div></div></div>"
