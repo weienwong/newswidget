@@ -23,7 +23,7 @@ function handleTweets(tweets){
 	 subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
       
       
-      var newNews = new newsItem(subString[0], subString[1], "http://uwchevron.wordpress.com/", "Chevron");
+      var newNews = new newsItem(subString[0], subString[1], "http://uwchevron.wordpress.com/", "The UW Chevron");
      var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Published on "+newNews.date+"<br> by: <a href=\"http://uwchevron.wordpress.com\">"+newNews.author+"</a></div><br></div></div></div>"
       var newsPanel = Mustache.to_html(panelTemplate);
 		$("#newsApp_f14_fourthTab").append(newsPanel);
