@@ -9,11 +9,12 @@ function showTabs(){
 	
 	// News heading sources, add news sources as needed
 	var newsHeadings = {
-		newsApp_f14_firstTab: "<img src=\"https://uwaterloo.ca/favicon.ico\" alt=\"UW Sites News\" title=\"UW sites news\" height=\"30\" width=\"30\">",
-		newsApp_f14_secondTab: "<img src=\"https://reddit.com/favicon.ico\" alt=\"UW Subreddit\" title=\"r/uwaterloo subreddit postings\" height=\"30\" width=\"30\">",
-		newsApp_f14_thirdTab: "<img src=\"https://pbs.twimg.com/profile_images/3729504476/cf2cf5267cd8c1f5caeccbdf0b821941_400x400.png\" title=\"UW Imprint's tweets\" alt=\"UW Imprint Twitter\" height=\"30\" width=\"30\">",
-		newsApp_f14_fourthTab: "<img src=\"http://uwchevron.wordpress.com/favicon.ico\" alt=\"The Chevron Twitter\" title=\"UW Chevron's tweets\" height=\"30\" width=\"30\">",
-		newsApp_f14_fifthTab: "<img src=\"http://www.bulletin.uwaterloo.ca/favicon.ico\" alt=\"UW Daily Bulletin\" title=\"UW Daily Bulletin's tweets\" height=\"30\" width=\"30\">"
+		newsApp_f14_firstTab: "<img src=\"https://uwaterloo.ca/favicon.ico\" alt=\"University of Waterloo logo\" title=\"UW sites news\" height=\"30\" width=\"30\">",
+		newsApp_f14_secondTab: "<img src=\"https://reddit.com/favicon.ico\" alt=\"Reddit icon\" title=\"r/uwaterloo subreddit postings\" height=\"30\" width=\"30\">",
+		newsApp_f14_thirdTab: "<img src=\"https://pbs.twimg.com/profile_images/3729504476/cf2cf5267cd8c1f5caeccbdf0b821941_400x400.png\" title=\"UW Imprint's tweets\" alt=\"UW Imprint Twitter icon\" height=\"30\" width=\"30\">",
+		newsApp_f14_fourthTab: "<img src=\"http://uwchevron.wordpress.com/favicon.ico\" alt=\"The UW Chevron Twitter icon\" title=\"UW Chevron's tweets\" height=\"30\" width=\"30\">",
+		newsApp_f14_fifthTab: "<img src=\"http://www.bulletin.uwaterloo.ca/favicon.ico\" alt=\"UW Daily Bulletin icon\" title=\"UW Daily Bulletin's tweets\" height=\"30\" width=\"30\">"
+		newsApp_f14_sixthTab: "<img src=\"http://www.bulletin.uwaterloo.ca/favicon.ico\" alt=\"University of Waterloo Twitter icon\" title=\"University Waterloo's tweets\" height=\"30\" width=\"30\">"
 		//newsApp_f14_aboutUsTab: "About Us",
 
 	};
@@ -48,6 +49,7 @@ function showTabs(){
 	getChevron();
 	getSubreddit();
 	getDB();
+	getUWtwitter();
 	//testit();
 
 	// populates the news tabs
