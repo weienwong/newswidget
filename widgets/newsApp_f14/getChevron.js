@@ -2,19 +2,21 @@
 // not working until can figure out how to use twitter
 function getChevron(){
 
+// gets a list of html strings for each tweet
 function handleTweets(tweets){
-    var x = tweets.length;
-    var n = 0;
+    var tweetNum = tweets.length;
     var element = document.getElementById('chevron');
-    var html = '';
+    var newsList = [];
     console.log(tweets);
     
-    while(n < x) {
-      html = tweets[n];
-      var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"\"><b>"+html+"</b></a><br><br></div></div>"
-      var newsPanel = Mustache.to_html(panelTemplate, tweets[n]);
+   
+    for (var i = 0; i < tweetNum; i++){
+      newsList = breakUpNews(tweets[i]);
+      var newNews = newsItem(newsList[0], newsList[1], "Chevron", "http://uwchevron.wordpress.com/");
+     var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href="+newNews.url+"><b>"+newNews.article+"</b></a><br><br><div class=\"publishInfo\">Posted by: "+newNews.author+"</div></div></div>"
+      var newsPanel = Mustache.to_html(panelTemplate);
 		$("#newsApp_f14_fourthTab").append(newsPanel);
-      n++;
+     
     }
     //html += '</ul>';
     //element.innerHTML = html;
