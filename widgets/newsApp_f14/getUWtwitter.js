@@ -17,6 +17,7 @@ function handleTweets(tweets){
   	subString[0] = subString[0].substr(17); // to remove the "P class tweet" tag
 	//subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
         subString[1] = subString[1].replace("Posted on", "Tweeted");
+        subString[1] = subString[1].replace("Posted", "Tweeted"); // if the tweet is too recent, "on" is not there
       	subString[1] = subString[1].replace("</p>", "");
       
     	if (subString[1] === "hours "){
