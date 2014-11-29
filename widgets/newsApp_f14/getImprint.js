@@ -22,7 +22,7 @@ function handleTweets(tweets){
       	}
       
      	var newNews = new newsItem(subString[0], subString[1], "http://uwimprint.ca/", "@uwimprint");
-     	var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Tweeted "+newNews.date+"<br> by: <a href=\"https://twitter.com/uwimprint\">"+newNews.author+"</a></div><br></div></div></div>"
+     	var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Tweeted "+newNews.date+"<br> <a href=\"https://twitter.com/uwimprint\">"+newNews.author+"</a></div><br></div></div></div>"
       	var newsPanel = Mustache.to_html(panelTemplate);
 		$("#newsApp_f14_thirdTab").append(newsPanel);
      
