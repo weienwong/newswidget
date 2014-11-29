@@ -5,10 +5,10 @@
 
 // Object constructor for newsItem
 function newsItem(title, date, url, source){
-  this.title = title; // the title of the news item - HTML string containing the entirety of the tweet
+  this.article = title; // the title of the news item - HTML string containing the entirety of the tweet
   this.date = date; // the date of the news item
   this.url = url;  // the url of the news item (since tweets normally do not link to individual articles, this should probably direct to the main site)
-  this.source = source; // who published the article
+  this.author = source; // who published the article
 }
 
 
