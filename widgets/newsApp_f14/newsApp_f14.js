@@ -9,11 +9,11 @@ function showTabs(){
 	
 	// News heading sources, add news sources as needed
 	var newsHeadings = {
-		newsApp_f14_firstTab: "<img src=\"http://png-1.findicons.com/files/icons/1580/devine_icons_part_2/128/home.png\" alt=\"Smiley face\" height=\"20\" width=\"20\">",
-		newsApp_f14_secondTab: "UW Subreddit",
-		newsApp_f14_thirdTab: "UW Imprint",
-		newsApp_f14_fourthTab: "Chevron",
-		newsApp_f14_fifthTab: "Daily Bulletin",
+		newsApp_f14_firstTab: "<img src=\"https://uwaterloo.ca/favicon.ico\" alt=\"UW Sites News\" height=\"25\" width=\"25\">",
+		newsApp_f14_secondTab: "<img src=\"https://reddit.com/favicon.ico\" alt=\"UW Subreddit\" height=\"25\" width=\"25\">",
+		newsApp_f14_thirdTab: "<img src=\"https://pbs.twimg.com/profile_images/3729504476/cf2cf5267cd8c1f5caeccbdf0b821941_400x400.png\" alt=\"UW Imprint Twitter\" height=\"25\" width=\"25\">",
+		newsApp_f14_fourthTab: "<img src=\"http://uwchevron.wordpress.com/favicon.ico\" alt=\"The Chevron Twitter\" height=\"25\" width=\"25\">",
+		newsApp_f14_fifthTab: "<img src=\"http://www.bulletin.uwaterloo.ca/favicon.ico\" alt=\"UW Daily Bulletin\" height=\"25\" width=\"25\">"
 		//newsApp_f14_aboutUsTab: "About Us",
 
 	};
