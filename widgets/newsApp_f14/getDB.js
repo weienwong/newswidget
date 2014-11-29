@@ -17,8 +17,8 @@ function handleTweets(tweets){
 	  subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
       
       
-     	var newNews = new newsItem(subString[0], subString[1], "http://bulletin.uwaterloo.ca/", "Waterloo Daily Bulletin");
-     	var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Tweeted "+newNews.date+"<br> by: <a href=\"http://bulletin.uwaterloo.ca\">"+newNews.author+"</a></div><br></div></div></div>"
+     	var newNews = new newsItem(subString[0], subString[1], "http://bulletin.uwaterloo.ca/", "@UWBulletin");
+     	var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Tweeted "+newNews.date+"<br> by: <a href=\"https://twitter.com/uwdailybulletin\">"+newNews.author+"</a></div><br></div></div></div>"
       	var newsPanel = Mustache.to_html(panelTemplate);
 		    $("#newsApp_f14_fifthTab").append(newsPanel);
      
