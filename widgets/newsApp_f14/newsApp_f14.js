@@ -47,6 +47,7 @@ function showTabs(){
 	getImprint();
 	getChevron();
 	getSubreddit();
+	getDB();
 	//testit();
 
 	// populates the news tabs
