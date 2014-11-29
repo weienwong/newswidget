@@ -9,7 +9,7 @@ function showTabs(){
 	
 	// News heading sources, add news sources as needed
 	var newsHeadings = {
-		newsApp_f14_firstTab: "<img src=\"http://png-1.findicons.com/files/icons/1580/devine_icons_part_2/128/home.png\" alt=\"Smiley face\">",
+		newsApp_f14_firstTab: "<img src=\"http://png-1.findicons.com/files/icons/1580/devine_icons_part_2/128/home.png\" alt=\"Smiley face\" height=\"20\" width=\"20\">",
 		newsApp_f14_secondTab: "UW Subreddit",
 		newsApp_f14_thirdTab: "UW Imprint",
 		newsApp_f14_fourthTab: "Chevron",
