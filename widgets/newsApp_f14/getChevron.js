@@ -24,7 +24,7 @@ function handleTweets(tweets){
       
       
       var newNews = new newsItem(subString[0], subString[1], "http://uwchevron.wordpress.com/", "Chevron");
-     var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><a target=\"_blank\" href=\"+newNews.url+\"><b>"+newNews.article+"</b></a><br><br><div class=\"publishInfo\">Published on"+newNews.date+"<br> by: "+newNews.author+"</div><br></div></div></div>"
+     var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Published on "+newNews.date+"<br> by: <a href="uwchevron.wordpress.com/">"+newNews.author+"</a></div><br></div></div></div>"
       var newsPanel = Mustache.to_html(panelTemplate);
 		$("#newsApp_f14_fourthTab").append(newsPanel);
      
