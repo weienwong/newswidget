@@ -44,7 +44,7 @@ function showTabs(){
 	
 	// makes function calls to grab and display news content from sources
 	getNews();
-	//getImprint();
+	getImprint();
 	getChevron();
 	getSubreddit();
 	//testit();
