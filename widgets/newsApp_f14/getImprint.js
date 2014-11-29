@@ -42,7 +42,7 @@ function handleTweets(tweets){
   		"lang": 'en',
   		"showInteraction": false,
   		"customCallback": handleTweets,
-  		"showRetweet": false
+  		"showRetweet": true
 	};
 	twitterFetcher.fetch(imprintfeed);
 
