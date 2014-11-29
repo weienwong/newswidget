@@ -1,3 +1,4 @@
+function getImprint() {
 // gets a list of html strings for each tweet
 function handleTweets(tweets){
     var tweetNum = tweets.length;
@@ -38,4 +39,5 @@ function handleTweets(tweets){
 	};
 	twitterFetcher.fetch(imprintfeed);
 
+}
 }
