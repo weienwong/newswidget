@@ -23,7 +23,7 @@ function breakUpNews(string){
   // ["<p class="tweet">Look for new articles soon!", "Posted on 14 Nov</p>"]
   
   subString[0] = subString[0].substr(17); // to remove the "P class tweet" tag
-  substring[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
+  subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
   
   
   console.log(subString);
