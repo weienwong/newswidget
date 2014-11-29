@@ -33,7 +33,7 @@ function handleTweets(tweets){
 	//Uses Twitter Fetcher
 	
 	var imprintfeed = {
-  		"id": '538765938683052032',
+  		"id": '538801870098419712',
   		"domId": 'imprint',
   		"maxTweets": 100,
   		"enableLinks": true,
