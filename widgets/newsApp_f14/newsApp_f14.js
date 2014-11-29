@@ -14,7 +14,7 @@ function showTabs(){
 		newsApp_f14_thirdTab: "UW Imprint",
 		newsApp_f14_fourthTab: "Chevron",
 		newsApp_f14_fifthTab: "Daily Bulletin",
-		newsApp_f14_aboutUsTab: "About Us",
+		//newsApp_f14_aboutUsTab: "About Us",
 
 	};
 
