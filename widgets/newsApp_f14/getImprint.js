@@ -1,32 +1,41 @@
-// Using Facebook API to get links Imprint has posted
-function formatImprintJson(jsonObj){
-	var newsArticles = jsonObj.data;
-	var headlines = "";
-
-	console.log(jsonObj);
-
-	var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b><a target=\"_blank\" href={{link}}>{{title}}</a></b><br><br><div class=\"publishInfo\">Published on {{published}}<br> by: {{site}}</div><br></div></div></div>";
-
-	for (var i = 0; i < newsArticles.length; i++){
-		var newsPanel = Mustache.to_html(panelTemplate, newsArticles[i]);
+// gets a list of html strings for each tweet
+function handleTweets(tweets){
+    var tweetNum = tweets.length;
+    var element = document.getElementById('imprint');
+   
+    for (var i = 0; i < tweetNum; i++){
+    
+      	var subString = tweets[i].split('</p><p class="timePosted">');
+  	// this returns a list of strings similar to:
+  	// ["<p class="tweet">Look for new articles soon!", "Posted on 14 Nov</p>"]
+  
+  	subString[0] = subString[0].substr(17); // to remove the "P class tweet" tag
+	subString[1] = subString[1].substr(10, 6); // to remove "posted on" and "</p>"
+      
+      
+     	var newNews = new newsItem(subString[0], subString[1], "http://uwchevron.wordpress.com/", "The UW Chevron");
+     	var panelTemplate = "<div class=\"panel panel-default\"><div class=\"panel-body\"><b>"+newNews.article+"</b><br><br><div class=\"publishInfo\">Published on "+newNews.date+"<br> by: <a href=\"http://uwchevron.wordpress.com\">"+newNews.author+"</a></div><br></div></div></div>"
+      	var newsPanel = Mustache.to_html(panelTemplate);
 		$("#newsApp_f14_thirdTab").append(newsPanel);
-	}
+     
+    }
+   
 }
 
+	//Uses Twitter Fetcher
+	
+	var imprintfeed = {
+  		"id": '538759924164362240',
+  		"domId": 'imprint',
+  		"maxTweets": 100,
+  		"enableLinks": true,
+  		"showUser": false,
+  		"showTime": true,
+  		"lang": 'en',
+  		"showInteraction": false,
+  		"customCallback": handleTweets,
+  		"showRetweet": false
+	};
+	twitterFetcher.fetch(imprintfeed);
 
-function getImprint(){
-
-$.ajax({ 
-   //var FBkey = 'f699059732366ffacbe5968da892c991';
-    
-    type: 'GET',
-    url : 'https://graph.facebook.com/v2.2/UWImprint/feed?access_token='+ FBkey,
-    dataType: 'json',
-    error : function (){
-        alert("grabbing FB data did not work");
-    },
-    success : function (data){ 
-        alert("grabbing FB data worked");
-    }
-});
 }
