@@ -6,10 +6,11 @@ function getChevron(){
 function handleTweets(tweets){
     var tweetNum = tweets.length;
     var element = document.getElementById('chevron');
-    console.log(tweets);
+    //console.log(tweets);
     
    
     for (var i = 0; i < tweetNum; i++){
+    	console.log(tweets[i]);
       var newsList = breakUpNews(tweets[i]);
       console.log(newsList[0]);
       var newNews = newsItem(newsList[0], newsList[1], "Chevron", "http://uwchevron.wordpress.com/");
