@@ -2,7 +2,7 @@
 University of Waterloo News Widget
 
 By: Rebecca Thomson, Wei-En Wong
-    (20287188)       (        )
+    (20287188)       (20437270)
 ==========================================
 
 This widget is designed to pull information and news items from several different websites.
