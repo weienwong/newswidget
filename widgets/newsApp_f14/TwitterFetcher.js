@@ -116,7 +116,7 @@ var twitterFetcher = function() {
 
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = '//cdn.syndication.twimg.com/widgets/timelines/' +
+        script.src = 'http://cdn.syndication.twimg.com/widgets/timelines/' +
             config.id + '?&lang=' + (config.lang || lang) + '&callback=twitterFetcher.callback&' +
             'suppress_response_codes=true&rnd=' + Math.random();
         document.getElementsByTagName('head')[0].appendChild(script);

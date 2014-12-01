@@ -29,12 +29,10 @@
 	   <div id="main_widget_area" class="row">
 
 	    	<div class="col-md-4 cell" id="newsApp_f14_background">
-                <div class="newsApp_f14_newsAppTitleBar">
-                    University of Waterloo News
-                </div>
+                
                 <div id="newsApp_f14">
-                    <div id="newsApp_f14_panelList" role="tabpanel">
-                    </div>
+                   
+                   
                 </div>
 		    </div>
         </div>
@@ -52,16 +50,13 @@
     <script type="text/javascript" src="widgets/newsApp_f14/getUwSubreddit.js"></script>
     <script type="text/javascript" src="widgets/newsApp_f14/TwitterFetcher.js"></script>
     <script type="text/javascript" src="widgets/newsApp_f14/newsItem.js"></script>
-     <script type="text/javascript" src="widgets/newsApp_f14/getDB.js"></script>
-     <script type="text/javascript" src="widgets/newsApp_f14/getUWtwitter.js"></script>
+    <script type="text/javascript" src="widgets/newsApp_f14/getDB.js"></script>
+    <script type="text/javascript" src="widgets/newsApp_f14/getUWtwitter.js"></script>
 
     <script>
-    var server = "localhost"
+    var server = "cs349.student.cs.uwaterloo.ca:9410"
     $(document).ready(function() {
-
-        showTabs();
-
-    	
+        newsApp_f14("w39wong", "#newsApp_f14");
     });
     </script>
   

@@ -3,7 +3,11 @@
 // and populates it with corresponding news content from various
 // sources / web services
 
-function showTabs(){ 
+function newsApp_f14(userId, htmlId){ 
+
+	var titleBar ="<div class=\"newsApp_f14_newsAppTitleBar\">University of Waterloo News</div>";
+	$(htmlId).append(titleBar);
+    $(htmlId).append("<div id=\"newsApp_f14_panelList\" role=tabpanel></div>");
 	
 	var title = "Student News Center"
 	
@@ -15,8 +19,6 @@ function showTabs(){
 		newsApp_f14_fourthTab: "<img src=\"http://uwchevron.wordpress.com/favicon.ico\" alt=\"The UW Chevron Twitter icon\" title=\"UW Chevron's tweets\" height=\"30\" width=\"30\">",
 		newsApp_f14_fifthTab: "<img src=\"http://imgur.com/zeaHHct.jpg\" alt=\"UW Daily Bulletin icon\" title=\"UW Daily Bulletin's tweets\" height=\"30\" width=\"30\">",
 		newsApp_f14_sixthTab: "<img src=\"https://pbs.twimg.com/profile_images/378800000863451026/FxTf9bMi_400x400.jpeg\" alt=\"University of Waterloo Twitter icon\" title=\"University Waterloo's tweets\" height=\"30\" width=\"30\">"
-		//newsApp_f14_aboutUsTab: "About Us",
-
 	};
 
 	var openingUL = "<ul class=\"nav nav-tabs\" role=\"tablist\" position=\"fixed\">";
@@ -50,8 +52,8 @@ function showTabs(){
 	getSubreddit();
 	getDB();
 	getUWtwitter();
-	//testit();
 
+	
 	// populates the news tabs
 	$("#newsApp_f14_panelList").html(headingsTemplate);
 	$("#newsApp_f14_panelList").append(tabContentLines);
